@@ -14,6 +14,9 @@ interface OwnProps {}
 type Props = ConnectedProps;
 
 export class ErrorPage extends PureComponent<Props> {
+  routeChange() {
+    window.location.href = '/';
+  }
   render() {
     const { navModel } = this.props;
     return (
@@ -23,7 +26,8 @@ export class ErrorPage extends PureComponent<Props> {
             <div className="panel-container error-container">
               <img src="public/img/404-error.png" width="100%" alt="graph" />
             </div>
-            <div className="button-div">
+
+            <div className="button-div" onClick={this.routeChange}>
               <button className="back-dashboard"> Back to Dashboard </button>
             </div>
           </div>
