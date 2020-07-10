@@ -22,7 +22,7 @@ function buildNavIndex(navIndex: NavIndex, children: NavModelItem[], parentItem?
     }
   }
 
-  navIndex['not-found'] = { ...buildWarningNav('Page not found', '404 Error').node };
+  navIndex['not-found'] = { ...buildWarningNav('404', 'That’s an error').node };
 }
 
 function buildWarningNav(text: string, subTitle?: string): NavModel {

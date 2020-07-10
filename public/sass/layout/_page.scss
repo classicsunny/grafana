@@ -162,3 +162,27 @@
 .page-sidebar-section {
   margin-bottom: $spacer * 2;
 }
+
+.error-page {
+  background-color: white;
+}
+
+.back-dashboard {
+  background-color: #f05a28;
+  color: #fff;
+  padding: 10px 23px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  border: 0px;
+}
+
+.button-div {
+  text-align: center;
+  padding: 20px;
+}
+
+.error-container {
+  border: 0px !important;
+}
